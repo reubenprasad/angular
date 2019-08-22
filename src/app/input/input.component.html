@@ -1,0 +1,13 @@
+<p>input works!</p>
+<table>
+    <tr>
+        <td>Name</td>
+        <td><input type="text" name="" id="name" [(ngModel)]="iname"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button (click)="msg=!msg">Show Message</button></td>
+    </tr>
+</table>
+
+<p *ngIf="msg">Welcome {{iname}}</p>

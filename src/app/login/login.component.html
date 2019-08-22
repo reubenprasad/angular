@@ -1,0 +1,20 @@
+<p>LOGIN</p>
+<table >
+    <tr>
+        <td>Username</td>
+        <td><input type="text" name="" id=""></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="password" name="" id=""></td>
+    </tr>
+    <tr>
+        <td style="text-align: right"><button class="btn waves-effect waves-light" type="submit" name="action">Login
+                <i class="material-icons right"></i>
+              </button></td>
+        <td>         <td><button class="btn waves-effect waves-light" type="submit" (click)="toggleSignUp()" name="action">Sign Up
+                <i class="material-icons right"></i>
+              </button></td>
+    </tr>            
+</table>
+<app-signup *ngIf="sign"></app-signup>
